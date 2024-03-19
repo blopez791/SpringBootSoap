@@ -74,7 +74,7 @@
 					</schemas>
 				</configuration>
 
-				<!--Configuracion para archivos WSDL fisicos -->
+				<!--Configuracion para archivos WSDL fisicos opción #1 -->
 				<!--<configuration>
 					<schemaLanguage>WSDL</schemaLanguage>
 					<generateDirectory>${project.basedir}/src/main/resources/wsdl</generateDirectory>
@@ -83,6 +83,17 @@
 						<pacakgeName>com.soap.wsdl</pacakgeName>
 						<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
 					</schemas>
+				</configuration>-->
+
+				<!--Configuracion para archivos WSDL fisicos opción #2 -->
+				<!--<configuration>
+					<schemaLanguage>WSDL</schemaLanguage>
+					<generateDirectory>${project.basedir}/src/main/java</generateDirectory>
+					<generatePackage>com.soap.tecnomen</generatePackage>
+					<schemaDirectory>${project.basedir}/src/main/resources/static/wsdl</schemaDirectory>
+					<schemaIncludes>
+						<include>Tecnomen.wsdl</include>
+					</schemaIncludes>
 				</configuration>-->
 			</plugin>
 		</plugins>
